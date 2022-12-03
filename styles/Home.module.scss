@@ -1,0 +1,39 @@
+.body{
+    margin-left: 50px;
+    position: relative;
+}
+
+.section1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -8%);
+    margin-left: auto;
+    margin-right: auto;
+    width: 860px;
+    height: 100vh;
+}
+
+.section2{
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    height: 82vh;
+}
+
+@media screen and (max-width: 460px){
+    .section1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 298px;
+        margin-left: auto;
+    margin-right: auto;
+        height: 39vh;
+    }
+}

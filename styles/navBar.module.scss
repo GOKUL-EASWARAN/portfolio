@@ -1,0 +1,293 @@
+.overflow{
+    position: fixed;
+    width: 50px;
+    height: 100vh;
+}
+
+.navContainer{
+    height: 100vh;
+    width: 50px;
+    background-color: #3C4048;
+    position: relative;
+    left: 0px;
+    top:0px;
+    overflow: hidden;
+    // border-bottom-right-radius: 15px;
+    // border-top-right-radius: 15px;
+}
+
+.navAnimation{
+    animation-name: nav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+@keyframes nav {
+    from {
+        width: 220px;
+    }
+    to {
+        width: 50px;
+    }
+}
+
+.navContainerWide{
+    // width: 300px;
+    animation-name: navWide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+@keyframes navWide {
+    from {
+        width: 50px;
+    }
+    to {
+        width:220px;
+    }
+}
+
+.navToggle{
+ height:60px;
+ width:50px;
+ cursor: pointer;
+}
+
+.navLogoSection{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 200px;
+}
+
+.navLogo{
+    width: 50px;
+    height: 50px;    
+}
+
+.logoName{
+    color: #EAEAEA;
+    line-height: 12px;
+}
+
+.navLine1{
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    transform: translate(-50%,0);
+    width:35px;
+    height:4px;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.navLine1Animation{
+    animation-name: navline1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+@keyframes navline1 {
+    from {
+        rotate: -45deg;
+        left: 20px;
+    }
+    to {
+        rotate: 0deg;
+        left: 25px;
+    }
+}
+
+.navLine2{
+    position: fixed;
+    top: 30px;
+    left: 25px;
+    transform: translate(-50%,0);
+    width:35px;
+    height:4px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    margin-top: 4px;
+}
+
+.navLine2Animation{
+    animation-name: navline2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+@keyframes navline2 {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+.navLine3{
+    position: fixed;
+    top: 39px;
+    left: 25px;
+    transform: translate(-50%,0);
+    width:35px;
+    height:4px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    margin-top: 4px;
+}
+
+.navLine3Animation{
+    animation-name: navline3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+@keyframes navline3 {
+    from {
+        rotate: 45deg;
+        left: 20px;
+    }
+    to {
+        rotate: 0deg;
+        left: 25px;
+    }
+}
+
+.navLine1Turn{
+    animation-name: navLine1Turn;
+    animation-duration: 1s;
+    margin-top: 20px !important;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navLine1Turn {
+    from {
+    }
+    to {
+        rotate: 45deg;
+        left: 20px;
+    }
+}
+
+.navLine2Hide{
+    animation-name: navLine2Hide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navLine2Hide {
+    from {
+    }
+    to {
+        visibility: hidden;
+    }
+}
+
+
+.navLine3Turn{
+    animation-name: navLine3Turn;
+    animation-duration: 1s;
+    margin-top: -19px !important;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navLine3Turn {
+    from {
+    }
+    to {
+        rotate: -45deg;
+        left: 20px;
+    }
+}
+
+
+// nav options
+.navOptionContainer{
+    // margin-left: -31px;
+    // width: 251px;
+}
+
+.navOption{
+    margin-top: 30px;
+    // display: flex;
+    cursor: pointer;
+    position: relative;
+    // justify-content: space-between;
+}
+
+.navOptionFlex{
+    display: flex;
+    width: 220px;
+    height: 55px;
+    margin-top: 25px;
+}
+
+.navSelected{
+    
+    position: relative;
+    // margin-left: 31px;
+}
+
+.indicator{
+    width: 100%;
+    height: 55px;
+    background-color: #ffffff;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    transition: 0.5s;
+    margin-top: 91px;
+}
+
+.indicatorCircle{
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    left: 4px;
+    background-color: rgb(233, 156, 67);
+}
+
+.indicator::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    right: 0;
+    top: -25px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 7px 4px 0px 0px #ffffff;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+}
+
+.indicator::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    right: 0;
+    top: 55px;
+    border-top-right-radius: 20px;
+    box-shadow: 9px -2px 0px 2px #ffffff;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+}
+
+.navIcons{
+    margin-left: -28px;
+    margin-top: 13px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.navOptionsText{
+    line-height: 16px;
+    color: #B2B2B2;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 17px;
+}
+
